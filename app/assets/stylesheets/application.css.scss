@@ -14,8 +14,8 @@
  *= require_self
  */
 
-@import "materialize/components/color";
-$primary-color: transparent;
+// @import "materialize/components/color";
+$primary-color: grey;
 @import 'materialize';
 
 nav {
