@@ -1,7 +1,11 @@
-$(document).ready(function() {
+var ready;
+ready = function() {
   $('.carousel').carousel({full_width: true});
-  $('header')
-});
+  console.log('run good');
+};
+
+$(document).ready(ready);
+$(document).on('turbolinks:load', ready);
 
 $(window).scroll(function() {
   if (this.document.body.scrollTop < 64) {
