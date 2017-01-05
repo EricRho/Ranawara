@@ -1,0 +1,49 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home_main {
+  top: 0;
+  overflow-y: hidden;
+  // width: 100vw;
+  height: 100%;
+
+  .carousel.carousel-slider.initialized {
+    height: -webkit-calc(100vh - 64px);
+    height: -moz-calc(100vh - 64px);
+    height: calc(100vh - 64px);
+    background-color: #000000;
+
+    a {
+      img {
+        object-fit: cover;
+        height: 100%;
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  color: white;
+  height: 92vh;
+  width: 100%;
+  font-family: 'Cinzel Decorative', cursive;
+
+  h1 {
+    right: 0;
+    left: 0;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+    opacity: .6;
+    font-size: 7em;
+  }
+}
+
+.welcome {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #737070;
+}

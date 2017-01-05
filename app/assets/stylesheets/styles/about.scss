@@ -1,0 +1,77 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about_main {
+
+  .background {
+    height: 500px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.about {
+  text-align: center;
+
+  .features {
+    height: 400px;
+
+    .feature {
+      padding: 0;
+      text-transform: uppercase;
+      height: 100%;
+      // color: white;
+      background-size: cover;
+
+      a {
+        height: 100%;
+        width: 100%;
+
+        .inner {
+          background-repeat: no-repeat;
+          background-size: cover !important;
+          filter: grayscale(100%);
+          height: 100%;
+          width: 100%;
+
+          h4 {
+            right: 0;
+            left: 0;
+            margin: 0 auto 0 auto;
+            opacity: .8;
+          }
+        }
+
+        .inner:hover {
+          filter: grayscale(0%);
+          color: white;
+        }
+
+        .villa {
+          background: url('photos/compressed/villa - day-min.jpg');
+        }
+
+        .grounds {
+          background: url('photos/compressed/Joby Davies - ©OBS08055-min.jpg');
+        }
+
+        .spa {
+          background: url('photos/compressed/Joby  Davies - ©OBS09949-min.jpg');
+        }
+
+        .food {
+          background: url('photos/compressed/Joby Davies - ©OBS09964-min.jpg');
+        }
+
+        .facilities {
+          background: url('photos/compressed/Joby Davies - ©OBS08255-min.jpg');
+        }
+      }
+    }
+  }
+}
