@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'home/index', path: ''
+  get 'home/index' => ''
 
-  get 'about/index', path: '/about'
+  get 'about/index' => '/about'
 
   root 'home#index'
 
