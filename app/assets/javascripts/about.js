@@ -14,13 +14,11 @@ ready = function() {
   }, 200);
 
   $elsArr.forEach(function($el) {
-    console.log('run');
     $el.addEventListener('click', function() {
       console.log($el);
       if (this.classList.contains('s--active')) return;
       $cont.classList.add('s--el-active');
       this.classList.add('s--active');
-      console.log('good');
     });
   });
 

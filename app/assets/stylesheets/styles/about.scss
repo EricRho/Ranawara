@@ -372,7 +372,11 @@ $contentFadeinAT: 0.5s;
 
         &:before {
           transition-delay: 0.1s * $i;
-          background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-#{$i + 3}.jpg');
+          // background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-#{$i + 3}.jpg');
+          background: url('photos/compressed/about-#{$i + 1}.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 12% 40%;
         }
       }
     }
