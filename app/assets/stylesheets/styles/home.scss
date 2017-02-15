@@ -11,7 +11,8 @@
   .carousel.carousel-slider.initialized {
     height: -webkit-calc(100vh - 64px);
     height: -moz-calc(100vh - 64px);
-    height: calc(100vh - 64px);
+    // height: calc(100vh - 64px);
+    height: 100vh;
     background-color: #000000;
 
     a {
