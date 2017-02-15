@@ -61,8 +61,7 @@
 }
 
 // ------------- VARIABLES ------------- //
-// $parallax-offset: 30vh;
-$parallax-offset: 0vh;
+$parallax-offset: 30vh;
 $content-offset: 40vh;
 $transition-speed: 1.2s;
 $slide-number: 3;
@@ -97,7 +96,7 @@ html, body {
   &:first-child {
     // background-image: url(http://s8.postimg.org/lf2udl5np/4_Aihmii.jpg);
     background-image: url('photos/outdoor - pool angle_opt.jpg');
-    // transform: translateY(-$parallax-offset / 2);
+    transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
       transform: translateY($parallax-offset /2);
     }
