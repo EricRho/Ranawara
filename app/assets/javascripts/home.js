@@ -15,24 +15,26 @@ function ready() {
 		// ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 		function parallaxScroll(evt) {
 	  		if (isFirefox) {
-		    	//Set delta for Firefox
+		    	// DELTA FOR FIREFOX
 		    	delta = evt.detail * (-120);
-		    	console.log('FIREFOX DELTA', delta);
 		  	} else if (isIe) {
-		    	//Set delta for IE
+		    	// DELTA FOR IE
 		    	delta = -evt.deltaY;
 		  	} else {
-		    	//Set delta for all other browsers
+		    	// DELTA FOR OTHER BROWSERS
 		    	delta = evt.wheelDelta;
+		    	console.log('DELTA', delta);
 		  	}
 
 		  	if (ticking != true) {
 		    	if (delta <= -scrollSensitivitySetting) {
 			      	// Down scroll
 			      	ticking = true;
-		      		if (currentSlideNumber !== totalSlideNumber - 1) {
-		      			console.log('CURRENT SLIDE', currentSlideNumber);
+		      		// if (currentSlideNumber !== totalSlideNumber - 1) {
+	      			if (currentSlideNumber < totalSlideNumber - 1) {
+		      			console.log('all good');
 		        		currentSlideNumber ++;
+		        		console.log('CURRENT SLIDE', currentSlideNumber);
 		        		nextItem();
 		      		}
 		      		slideDurationTimeout(slideDurationSetting);
@@ -65,7 +67,6 @@ function ready() {
 		function nextItem() {
 		  	var $previousSlide = $(".background").eq(currentSlideNumber - 1);
 		  	$previousSlide.removeClass("up-scroll").addClass("down-scroll");
-		  	console.log(currentSlideNumber);
 		}
 
 		function previousItem() {
@@ -75,10 +76,9 @@ function ready() {
 
 		function throttle(fn, threshold, scope) {
 			console.log('throttle');
-			console.log('FN', fn);
-			console.log('THRESHOLD', threshold);
-			console.log('SCOPE', scope);
+			console.log('THRESHOLD BEFORE', threshold);
 			threshold || (threshold = 60);
+			console.log('THRESHOLD', threshold);
 			var last, 
 				deferTimer;
 			return function () {
@@ -101,5 +101,6 @@ function ready() {
 
 }
 
-$(document).on('turbolinks:load', ready);
-
+// $(document).on('turbolinks:load', ready);
+// $(document).on('page:change', ready);
+$(document).ready(ready);
