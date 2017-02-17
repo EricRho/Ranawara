@@ -20,7 +20,7 @@ $transition-speed: 1.2s;
 $slide-number: 3;
 
 html, body {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .background {
@@ -44,7 +44,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
   &:first-child {
     background-image: url('photos/outdoor - pool angle_opt.jpg');
@@ -133,7 +133,7 @@ html, body {
 /* Set stacking context of slides */
 @for $i from 1 to ($slide-number + 1) {
     .background:nth-child(#{$i}) {
-        z-index: ($slide-number + 1) - $i; 
+        z-index: ($slide-number + 1) - $i;
     }
 }
 

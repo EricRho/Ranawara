@@ -5,15 +5,35 @@
 .about_main {
 
   .cover {
-    position: relative;
-    // height: 500px;
+    // position: relative;
     height: 60vh;
+    background-image: url('photos/compressed/outdoor - night tree-min.jpg');
+    background-size: cover;
+    background-position: 50%;
 
-    img {
-      object-fit: cover;
-      height: 100%;
+    &:before {
+      content: '';
+      position: absolute;
       width: 100%;
+      // height: 100%;
+      height: 60vh;
+      background: rgba(0, 0, 0, 0.3);
     }
+
+    .title {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      top: 27vh;
+      font-family: 'Cinzel Decorative', cursive;
+    }
+
+    // img {
+    //   object-fit: cover;
+    //   height: 100%;
+    //   width: 100%;
+    // }
   }
 }
 

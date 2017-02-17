@@ -52,8 +52,10 @@ $contentFadeinAT: 0.5s;
   position: relative;
   overflow: hidden;
   // height: 100vh;
-  height: 60vh;
+  // height: 60vh;
+  height: 70vh;
   // padding: $vertPad $sidePad;
+  padding: 0 0 $vertPad 0;
 
   &__inner {
     position: relative;
@@ -101,7 +103,8 @@ $contentFadeinAT: 0.5s;
 
   &__bg {
     position: relative;
-    width: calc(100vw - #{$sidePad * 2});
+    // width: calc(100vw - #{$sidePad * 2});
+    width: 100vw;
     height: 100%;
     transition: transform $moveAT $expandAT;
     will-change: transform;
@@ -148,6 +151,12 @@ $contentFadeinAT: 0.5s;
     }
 
     // INIDIVIDUAL 'ABOUT' IMAGES
+
+    &.grounds {
+      &:before {
+        background-position: 50% 50% !important;
+      }
+    }
 
     &.spa {
       &:before {
