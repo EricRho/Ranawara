@@ -4,13 +4,13 @@ function ready() {
 	$(document).ready(function() {
 
 		// ------------- VARIABLES ------------- //
-		var ticking = false;
-		var isFirefox = (/Firefox/i.test(navigator.userAgent));
-		var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
-		var scrollSensitivitySetting = 30;
-		var slideDurationSetting = 600;
-		var currentSlideNumber = 0;
-		var totalSlideNumber = $(".background").length;
+		var ticking = false,
+				isFirefox = (/Firefox/i.test(navigator.userAgent)),
+				isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent)),
+				scrollSensitivitySetting = 30,
+				slideDurationSetting = 600,
+				currentSlideNumber = 0,
+				totalSlideNumber = $(".background").length;
 
 		// ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 		function parallaxScroll(evt) {
@@ -79,7 +79,7 @@ function ready() {
 			console.log('THRESHOLD BEFORE', threshold);
 			threshold || (threshold = 60);
 			console.log('THRESHOLD', threshold);
-			var last, 
+			var last,
 				deferTimer;
 			return function () {
 				var context = scope || this;
