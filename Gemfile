@@ -26,6 +26,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 
+# Google Maps for Rails
+gem 'gmaps4rails'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
