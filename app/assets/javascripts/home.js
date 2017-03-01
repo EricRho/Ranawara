@@ -1,7 +1,8 @@
 var ready;
 
 function ready() {
-	$(document).ready(function() {
+	console.log('HOME');
+	// $(document).ready(function() {
 
 		// ------------- VARIABLES ------------- //
 		var ticking = false,
@@ -44,6 +45,7 @@ function ready() {
 		      		ticking = true;
 		      		if (currentSlideNumber !== 0) {
 		        		currentSlideNumber --;
+								console.log('CURRENT SLIDE', currentSlideNumber);
 		      		}
 		      		previousItem();
 		      		slideDurationTimeout(slideDurationSetting);
@@ -97,7 +99,7 @@ function ready() {
 				}
 			};
 		}
-	});
+	// });
 
 }
 

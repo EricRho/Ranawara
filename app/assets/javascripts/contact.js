@@ -1,6 +1,7 @@
-var ready;
+var contactReady;
 
-function ready() {
+function contactReady() {
+  console.log('CONTACT');
   handler = Gmaps.build('Google');
   handler.buildMap({
       provider: {
@@ -18,11 +19,6 @@ function ready() {
         {
           "lat": 6.072289,
           "lng": 80.916981,
-          // "picture": {
-          //   "url": "logos/icon.png",
-          //   "width":  32,
-          //   "height": 32
-          // },
           "infowindow": "hello!"
         }
       ]);
@@ -32,5 +28,6 @@ function ready() {
     }
   );
 }
-
-$(document).ready(ready);
+$(document).on('turbolinks:load', ready);
+// $(document).on('page:change', ready);
+// $(document).ready(contactReady);
