@@ -28,6 +28,6 @@ function contactReady() {
     }
   );
 }
-$(document).on('turbolinks:load', ready);
+$(document).on('turbolinks:load', contactReady);
 // $(document).on('page:change', ready);
 // $(document).ready(contactReady);

@@ -13,6 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore
+//= require turbolinks
+//= require init
+//= require home
+//= require about
+//= require contact
 //= require gmaps/google
 //= require materialize-sprockets
-//= require_tree .

@@ -1,5 +1,5 @@
-var ready;
-
+var aboutReady;
+console.log('ABOUT');
 function aboutReady() {
   console.log('ABOUT');
   var $cont = document.querySelector('.cont');
@@ -29,6 +29,6 @@ function aboutReady() {
   });
 };
 
-$(document).ready(aboutReady);
-// $(document).on('turbolinks:load', ready);
+// $(document).ready(aboutReady);
+$(document).on('turbolinks:load', aboutReady);
 // $(document).on('page:change', ready);

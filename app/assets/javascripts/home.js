@@ -103,6 +103,6 @@ function ready() {
 
 }
 
-// $(document).on('turbolinks:load', ready);
+$(document).on('turbolinks:load', ready);
 // $(document).on('page:change', ready);
-$(document).ready(ready);
+// $(document).ready(ready);
