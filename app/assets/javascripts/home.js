@@ -10,15 +10,13 @@ function ready() {
 				slideDurationSetting = 600,
 				currentSlideNumber = 0,
 				totalSlideNumber = $(".background").length;
-				console.log('IS FIREFOX?', isFirefox);
 		// ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 		function parallaxScroll(evt) {
 	  		if (isFirefox) {
 		    	// DELTA FOR FIREFOX
-		    	console.log('FIREFOX CONFIRMED');
 		    	delta = evt.deltaY * (-120);
 					console.log('FIREFOX DELTA', delta);
-					
+
 		  	} else if (isIe) {
 		    	// DELTA FOR IE
 		    	delta = -evt.deltaY;

@@ -5,10 +5,28 @@
 //   checkTop();
 // };
 
+console.log('LOAD SCROLL FOR NAV');
+isFirefox = (/Firefox/i.test(navigator.userAgent));
+
 $(window).scroll(function() {
-  if (this.document.body.scrollTop < 64) {
+                  /* Firefox */
+  if (isFirefox) {
+    // console.log(document.documentElement.scrollTop);
+    if (document.documentElement.scrollTop < 64) {
+      $('nav').css('background-color', 'transparent');
+    } else {
+      $('nav').css('background-color', 'grey');
+    }
+  } else if (this.document.body.scrollTop < 64) {
     $('nav').css('background-color', 'transparent');
   } else {
     $('nav').css('background-color', 'grey');
+    console.log('Change');
   }
+
+  // if (this.document.body.scrollTop < 64) {
+  //   $('nav').css('background-color', 'transparent');
+  // } else {
+  //   $('nav').css('background-color', 'grey');
+  // }
 });
