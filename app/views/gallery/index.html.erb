@@ -1,2 +1,31 @@
-<h1>Gallery#index</h1>
-<p>Find me in app/views/gallery/index.html.erb</p>
+
+<div class="gallery_main">
+
+  <div class="m-p-g">
+    <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+      <img src="/images/photos/about-2.jpg" data-full="/images/photos/about-2.jpg" class="m-p-g__thumbs-img" />
+      <img src="/images/photos/about-3.jpg" data-full="/images/photos/about-3.jpg" class='m-p-g__thumbs-img'/>
+
+      <img src="/images/photos/Joby Davies - ©OBS07718-min.jpg" data-full='/images/photos/Joby Davies - ©OBS07718-min.jpg' class='m-p-g__thumbs-img' />
+      <img src="/images/photos/Joby Davies - ©OBS07884-min.jpg" data-full='/images/photos/Joby Davies - ©OBS07884-min.jpg' class='m-p-g__thumbs-img' />
+      <img src="/images/photos/Joby Davies - ©OBS08055-min.jpg" data-full='/images/photos/Joby Davies - ©OBS08055-min.jpg' class='m-p-g__thumbs-img' />
+      <img src="/images/photos/Joby Davies - ©OBS08143-min.jpg" data-full='/images/photos/Joby Davies - ©OBS08143-min.jpg' class='m-p-g__thumbs-img' />
+      <img src="/images/photos/Joby Davies - ©OBS08191-min.jpg" data-full='/images/photos/Joby Davies - ©OBS08191-min.jpg' class='m-p-g__thumbs-img' />
+      <img src="/images/photos/Joby Davies - ©OBS08251-min.jpg" data-full='/images/photos/Joby Davies - ©OBS08251-min.jpg' class='m-p-g__thumbs-img' />
+      <img src="/images/photos/Joby Davies - ©OBS09754-min.jpg" data-full='/images/photos/Joby Davies - ©OBS09754-min.jpg' class='m-p-g__thumbs-img' />
+      <img src="/images/photos/Joby Davies - ©OBS09759-min.jpg" data-full='/images/photos/Joby Davies - ©OBS09759-min.jpg' class='m-p-g__thumbs-img' />
+
+    </div>
+
+    <div class="m-p-g__fullscreen"></div>
+  </div>
+</div>
+
+
+<script>
+	var elem = document.querySelector('.m-p-g');
+
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+</script>

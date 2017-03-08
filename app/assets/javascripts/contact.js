@@ -15,4 +15,3 @@ function initMap() {
     map: map
   });
 }
-

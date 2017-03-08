@@ -3,7 +3,8 @@ header {
 }
 nav {
   box-shadow: none;
-  background-color: transparent;
+  // background-color: transparent;
+  background-color: rgba(black, .5);
 
   a {
     display: inline-flex;

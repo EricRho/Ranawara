@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-
+//= npm-dependencies
 //= require materialize-sprockets
 //= require_tree .
